@@ -1,7 +1,5 @@
 'use strict';
 
-const fn = () => {};
-
 let date = new Date();
 let hours = date.getHours(), milli = date.getMilliseconds(), min = date.getMinutes(),
 month = date.getMonth(), seconds = date.getSeconds(), day = date.getUTCDay();
