@@ -20,12 +20,13 @@ const zamm = (str,arr1,arr2) => {
   	  } 
   	}
   	if (boo) {
-  		string += str[i];
+  	  string += str[i];
   	}
   } 
   return string;
 }
-console.log(zamm(str, arr1, arr2));									//тест на большую букву 
-console.log(zamm(test, arr1, arr2));								//тоже самое
-console.log(zamm((zamm(test1, arr1, arr2)), testarr2, testarr1));	//транслит с англиского
-console.log(zamm((zamm(test2, arr1, arr2)), testarr1, testarr2));	//транслит с русского
+
+console.log(zamm(str, arr1, arr2));							//тест на большую букву 
+console.log(zamm(test, arr1, arr2));						//тоже самое
+console.log(zamm(test1.toLowerCase(), testarr2, testarr1));	//транслит с англиского
+console.log(zamm(test2.toLowerCase(), testarr1, testarr2));	//транслит с русского
